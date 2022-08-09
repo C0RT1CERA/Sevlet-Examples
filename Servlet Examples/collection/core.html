@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv Java</title>
+<style>
+body{
+    background-color: #000000;
+}
+.space{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(0deg, #3E065F, #160040);
+    /* background-color: #3E065F; */
+    margin-bottom: 10px;
+    color: #8E05C2;
+    justify-content: center;
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h6{
+    display: flex;
+    font-family:'Courier New', Courier, monospace;
+    align-items: top;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size:medium;
+    background-color: #80558C;
+    color:#D8E9A8;
+    font-size:20px;
+}
+.master{
+    display: flexbox;
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #3E065F;
+    justify-content: space-evenly; 
+    border: 0px solid #A91079;
+}
+.internal{
+    display: block;
+    height: 200px;
+    width: 2000px;
+    background-image: linear-gradient(180deg, #79018C, #160040);
+    /* background-color: #700B97; */
+    border: 1px solid #FFFFFF;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="space">
+        <h1>Servlet Examples</h1>
+    </div>
+    <div class="master">
+        <div class="wrapper">
+            <!-- calculator -->
+            <div class="internal">
+                <h6>Calculator</h6>
+                <form action="calc" method="post">              
+                    <input type="text" name="val1" size="1px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px">
+                    <input type="text" name="op" size="1px" style="background-color: #4C3575; color: #ECDBBA;">
+                    <input type="text" name="val2" size="1px" style="background-color: #4C3575; color: #ECDBBA;">
+                    <input type="submit" value="CALCULATE" style="width: 115px; background-color: #9A0680; color: #FFFFFF; font-weight: 600; margin-top: 2px; margin-left: 5px;">
+                </form>
+                <div style="font-size:10px; color:#FFFFFF; margin-left:8px;"><p>Enter:<br>
+                    + for ADDITION <br>
+                    - for SUBTRACTION <br>
+                    / for DIVISION <br>
+                    x for MULTIPLICATION</p>
+                </div>
+            </div>
+            <!-- sign -->
+            <div class="internal">
+                <h6>Sign</h6>
+            <form action="sign" method="post">   
+                <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
+                <input type="submit" value="calculate sign" style="width: 115px; background-color: #9A0680; color: #FFFFFF; font-weight: 600; margin-top: 2px; margin-left: 5px;">
+            </form>
+            <div style="font-size:12px; color:#FFFFFF; margin-left:8px;">
+                <p>
+                    Check if entered number is "Negative" or "Positive".
+                </p>
+            </div>              
+            </div>
+            <!-- odd-even -->
+            <div class="internal">
+                <h6>Odd/Even</h6>
+                <form action="oddeven" method="post">   
+                    <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
+                    <input type="submit" value="odd/even" style="width: 115px; background-color: #9A0680; color: #FFFFFF; font-weight: 600; margin-top: 2px; margin-left: 5px;">
+                </form>
+                <div style="font-size:12px; color:#FFFFFF; margin-left:8px;">
+                    <p>
+                        Check if entered number is "ODD" or "EVEN".
+                    </p>
+                </div>
+            </div>
+            <!-- Factorial -->
+            <div class="internal">
+                <h6>Factorial</h6>
+                <form action="fact" method="post">   
+                    <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
+                    <input type="submit" value="Factorial" style="width: 115px; background-color: #9A0680; color: #FFFFFF; font-weight: 600; margin-top: 2px; margin-left: 5px;">
+                </form>
+                <div style="font-size:12px; color:#FFFFFF; margin-left:8px;">
+                    <p>
+                        Obtain the FACTORIAL of given number.
+                    </p>
+                </div>
+            </div>
+            <!-- Fibonacci -->
+            <div class="internal">
+                <h6>Fibonacci</h6>
+                <form action="fibo" method="post">   
+                    <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
+                    <input type="submit" value="Fibonacci" style="width: 115px; background-color: #9A0680; color: #FFFFFF; font-weight: 600; margin-top: 2px; margin-left: 5px;">
+                </form>
+                <div style="font-size:12px; color:#FFFFFF; margin-left:8px;">
+                    <p>
+                        Obtain the Fibonacci sequence of given range.
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <!-- extra divs -->
+        <!-- <div class="wrapper" style="margin-top: 10px;">
+            <div class="internal"></div>
+            <div class="internal"></div>
+            <div class="internal"></div>
+            <div class="internal"></div>
+            <div class="internal"></div>    
+        </div> -->
+    </div>
+</body>
+</html>

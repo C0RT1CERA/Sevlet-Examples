@@ -18,6 +18,8 @@ body{
     margin-bottom: 10px;
     color: #8E05C2;
     justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
 }
 h1{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -52,9 +54,21 @@ h6{
     width: 2000px;
     background-image: linear-gradient(180deg, #79018C, #160040);
     /* background-color: #700B97; */
+    /* border: 1px solid #FFFFFF; */
+}
+.l_b{
+    border: 1px solid #FFFFFF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;  
+}
+.r_b{
+    border: 1px solid #FFFFFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;   
+}
+.default_b{
     border: 1px solid #FFFFFF;
 }
-
 
 
 </style>
@@ -66,7 +80,7 @@ h6{
     <div class="master">
         <div class="wrapper">
             <!-- calculator -->
-            <div class="internal">
+            <div class="internal l_b">
                 <h6>Calculator</h6>
                 <form action="calc" method="post">              
                     <input type="text" name="val1" size="1px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px">
@@ -82,7 +96,7 @@ h6{
                 </div>
             </div>
             <!-- sign -->
-            <div class="internal">
+            <div class="internal default_b">
                 <h6>Sign</h6>
             <form action="sign" method="post">   
                 <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
@@ -95,7 +109,7 @@ h6{
             </div>              
             </div>
             <!-- odd-even -->
-            <div class="internal">
+            <div class="internal default_b">
                 <h6>Odd/Even</h6>
                 <form action="oddeven" method="post">   
                     <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
@@ -108,7 +122,7 @@ h6{
                 </div>
             </div>
             <!-- Factorial -->
-            <div class="internal">
+            <div class="internal default_b">
                 <h6>Factorial</h6>
                 <form action="fact" method="post">   
                     <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
@@ -121,7 +135,7 @@ h6{
                 </div>
             </div>
             <!-- Fibonacci -->
-            <div class="internal">
+            <div class="internal r_b">
                 <h6>Fibonacci</h6>
                 <form action="fibo" method="post">   
                     <input type="text" name="val1" size="14px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
@@ -135,13 +149,15 @@ h6{
             </div>    
         </div>
         <!-- extra divs -->
-        <!-- <div class="wrapper" style="margin-top: 10px;">
-            <div class="internal"></div>
+        <div class="wrapper" style="margin-top: 10px;">
+            <div class="internal default_b">
+                <h6>Fibonacci</h6>
+            </div>
             <div class="internal"></div>
             <div class="internal"></div>
             <div class="internal"></div>
             <div class="internal"></div>    
-        </div> -->
+        </div>
     </div>
 </body>
 </html>

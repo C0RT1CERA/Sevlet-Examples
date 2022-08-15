@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd/Even</title>
+    <style>
+        body{
+            background-color: #000000;
+        }
+        .space{
+            display: flex;
+            height: 100px;
+            width: 100%;
+            background-image: linear-gradient(0deg, #3E065F, #160040);
+            /* background-color: #3E065F; */
+            margin-bottom: 10px;
+            color: #8E05C2;
+            justify-content: center;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+        }
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h6{
+            display: flex;
+            font-family:'Courier New', Courier, monospace;
+            margin-left: 20px;
+            margin-top: 2px;
+            font-size:medium;
+            background-color: #80558C;
+            color:#D8E9A8;
+            font-size:30px;
+        }
+        .master{
+            display: flexbox;
+            height: 100%;
+            width: 100%;
+        }
+        .wrapper{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-color: #3E065F;
+            justify-content: center; 
+            border: 0px solid #A91079;
+        }
+        .internal{
+            display: flex;
+            height: 200px;
+            width: 2000px;
+            background-image: linear-gradient(180deg, #79018C, #160040);
+            /* background-color: #700B97; */
+            /* border: 1px solid #FFFFFF; */
+            flex-direction: column;
+            
+        }
+        .l_b{
+            border: 1px solid #FFFFFF;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;  
+        }
+        .r_b{
+            border: 1px solid #FFFFFF;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;   
+        }
+        .default_b{
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+        }
+        .move{
+            display: flex;
+            margin-top: -40px;
+            justify-content: center;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <div class="space">
+        <h1>Servlet Example-4</h1>
+    </div>
+    <div class="master">
+        <div class="wrapper">
+            <!-- calculator -->
+            <div class="internal default_b">
+            <h6>Fibonacci</h6>
+            <div class="move">
+                <form action="fibo" method="post">              
+                    <input type="text" placeholder="Enter non-zero integer" name="val1" size="25px" style="background-color: #4C3575; color: #ECDBBA; margin-left: 5px;">
+                    <input type="submit" value="fibo sequence" name="op" style="width: 180px; height: 40px; background-color: #9A0680; color: #FFFFFF; font-weight: 900; font-size:larger; margin-top: 2px; margin-left: 5px;">
+                </form>        
+                
+            </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="internal default_b">
+                <div style="font-size:32px; color:#FFFFFF; margin-left:8px;">
+                    <p>
+                        Obtain the Fibonacci sequence of given range.
+                    </p>
+                </div> 
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
